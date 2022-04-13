@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Trade.cs~RF869d3e.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradeCategory.Application\TradeCategory.Application.csproj" />
+    <ProjectReference Include="..\TradeCategory.Domain\TradeCategory.Domain.csproj" />
+    <ProjectReference Include="..\TradeCategory.Infra.CrossCutting.IoC\TradeCategory.Infra.CrossCutting.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
